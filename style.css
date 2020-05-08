@@ -1,0 +1,111 @@
+body {
+     margin: 0px;
+     height: auto;
+}
+
+.container {
+     width: 100%;
+     background-color: rgb(37, 171, 255);
+     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.288);
+     padding: 20px; 
+     box-sizing: border-box;
+}
+
+.containerSearch {
+     width: 80%;
+     text-align: center;
+     margin: auto;
+     margin-top: 7%;
+     background-color: white;
+     box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.068);
+     padding: 30px;
+     box-sizing: border-box;
+     position: sticky;
+     top: 20px;
+     z-index: 9999;
+}
+
+.container h1 {
+     margin: 0px;
+     text-align: center;
+     font-family: sans-serif;
+     color: white;
+}
+
+.containerSearch > input {
+     width: 90%;
+     padding: 16px;
+     border: 0;
+     border-bottom: 1px solid cornflowerblue;
+     font-weight: bold;
+     outline: none;
+}
+
+.containerSearch > button{
+     width: 100%;
+     padding: 10px;
+     border: 0;
+     background-color: lightskyblue;
+     color: white;
+     font-size: 1.4em;
+     border-radius: 5px;
+     cursor: pointer;
+}
+
+.containerSearch > input::placeholder {
+     font-weight: 500;
+}
+
+.containerSearch > input:focus::placeholder {
+     font-weight: bold;
+     font-size: 1.1em;
+}
+
+/* ---- MEMBER STYLE ---- */
+.list {
+     width: 90%;
+     height: auto;
+     padding: 10px;
+     margin: auto;
+     margin-top: 5%;
+     box-sizing: border-box;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 30px;
+}
+
+.list > .member {
+     box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.048);
+     text-align: center;
+     padding: 20px;
+     box-sizing: border-box;
+}
+
+.list > .member img{
+     width: 30%;
+     height: 50%;
+}
+
+.list > .member .dataMember {
+     width: 100%;
+     height: 20vh;
+     margin-top: 10%;
+     text-align: left;
+     font-family: sans-serif;
+     line-height: 15px;
+}
+
+h2 {
+     color: #333;
+     font-family: sans-serif;
+}
+
+@media only screen 
+     and (min-width : 200px)
+     and (max-width : 568px){
+          
+          .list {
+               grid-template-columns: 100%;
+          }
+}
+
